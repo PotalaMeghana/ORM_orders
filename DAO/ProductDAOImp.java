@@ -82,7 +82,7 @@ public class ProductDAOImp implements ProductDAO {
 			EntityManager entityManager = entityManagerFactory.createEntityManager();
 
 			// Prepare the JPA query
-			String query = "SELECT c FROM eStoreProduct.model.admin.entities.productCategoryModel c";
+			String query = "SELECT c FROM eStoreProduct.model.admin.input.Category c";
 			TypedQuery<Category> typedQuery = entityManager.createQuery(query, Category.class);
 
 			// Execute the query
